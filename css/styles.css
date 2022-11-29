@@ -142,10 +142,10 @@ img {
     color: var(--secondary-text-color);
 }
 
-.contact-nav .icon {
+/* .contact-nav .icon {
     width: 16px;
     height: 12px;
-}
+} */
 
 .contact-nav .link:hover,
 .contact-nav .link:focus {
