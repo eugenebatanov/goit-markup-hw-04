@@ -10,6 +10,7 @@
 /* бэкграунд кнопок фильтра #F5F4FA */
 /* бэкграунд цвет футера и героя #2F303A */
 /* цвет ссылок футера rgba(255, 255, 255, 0.6) */
+/* цвет неактивной иконки #AFB1B8 */
 
 *,
 *::before,
@@ -23,6 +24,7 @@
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
     --works-item-gap: 30px;
+    --inactive-icon: #AFB1B8;
 }
 
 body {
@@ -136,14 +138,13 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
 
-.contact-nav .mail {
-    color: var(--accent-color);
-}
-
-.contact-nav .tel {
     color: var(--secondary-text-color);
+}
+
+.contact-nav .icon {
+    width: 16px;
+    height: 12px;
 }
 
 .contact-nav .link:hover,
@@ -163,7 +164,6 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* background: rgba(47, 48, 58, 0.4); */
 }
 
 .hero .container {
@@ -193,6 +193,7 @@ button {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 
+    border-style: none;
     border-radius: 4px;
     padding: 10px 24px;
     text-align: center;
@@ -210,8 +211,8 @@ button {
 
 .button:hover,
 .button:focus {
-    color: aqua;
-    background-color: var(--secondary-text-color);
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
 }
 
 /* Section */
@@ -294,6 +295,7 @@ button {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .cards .person {
@@ -302,6 +304,42 @@ button {
 
 .feature .person {
     background-color: #FFFFFF;    
+}
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-soc-items {
+    width: 44px;
+    height: 44px;
+}
+
+.team-soc-items:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-soc-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-soc-link:hover {
+    background-color: var(--accent-color);
+}
+
+.team-soc-link:hover .team-soc-icons {
+    fill: var(--primary-white-color);
+}
+
+.team-soc-icons {
+    fill: var(--inactive-icon);
 }
 
 /* Filter */
@@ -337,13 +375,8 @@ button {
 
 .buttons .link:hover,
 .buttons .link:focus {
-    color: aqua;
-    background-color: var(--secondary-text-color);
-}
-
-.buttons .all {
-    background-color: var(--accent-color);
     color: var(--primary-white-color);
+    background-color: var(--accent-color);
 }
 
 .buttons .link {
