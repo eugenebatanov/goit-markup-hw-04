@@ -142,14 +142,14 @@ img {
     color: var(--secondary-text-color);
 }
 
-/* .contact-nav .icon {
-    width: 16px;
-    height: 12px;
-} */
-
 .contact-nav .link:hover,
 .contact-nav .link:focus {
     color: var(--accent-color);
+}
+
+.contact-nav .icon {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 /* Hero */
