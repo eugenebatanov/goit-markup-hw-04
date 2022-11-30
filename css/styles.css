@@ -432,6 +432,7 @@ button {
 .buttons .link:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .buttons .link {
@@ -451,6 +452,10 @@ button {
     flex-basis: calc(100% / 3 - var(--works-item-gap));
     margin-left: var(--works-item-gap);
     margin-top: var(--works-item-gap);
+}
+
+.works .item:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .works .service {
@@ -522,8 +527,7 @@ button {
 
 .address .link:hover,
 .address .link:focus {
-    color: aqua;
-    background-color: var(--secondary-text-color)
+    color: var(--accent-color);
 }
 
 .address {
@@ -545,8 +549,6 @@ button {
 
 .footer .container {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
 }
 
 .footer .title {
