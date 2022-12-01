@@ -396,8 +396,8 @@ button {
     border: 1px solid var(--accent-color);
 }
 
-.clients-items:hover .clients-icons,
-.clients-items:focus .clients-icons{
+.clients-link:hover .clients-icons,
+.clients-link:focus .clients-icons{
     fill: var(--accent-color);
 }
 
