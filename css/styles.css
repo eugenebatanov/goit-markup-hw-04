@@ -356,11 +356,11 @@ button {
     fill: var(--inactive-icon);
 }
 
+/* Clients */
 .clients-items:not(:last-child) {
     margin-right: 30px;
 }
 
-/* Clients */
 .regular-clients {
     padding-top: 94px;
     padding-bottom: 94px;
