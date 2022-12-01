@@ -342,11 +342,13 @@ button {
     align-items: center;
 }
 
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
     background-color: var(--accent-color);
 }
 
-.team-soc-link:hover .team-soc-icons {
+.team-soc-link:hover .team-soc-icons,
+.team-soc-link:focus .team-soc-icons {
     fill: var(--primary-white-color);
 }
 
@@ -385,16 +387,18 @@ button {
     align-items: center;
 }
 
-.clients-items:hover {
+.clients-icons {
+    fill: var(--inactive-icon);
+}
+
+.clients-items:hover,
+.clients-items:focus {
     border: 1px solid var(--accent-color);
 }
 
-.clients-items:hover .clients-icons {
+.clients-items:hover .clients-icons,
+.clients-items:focus .clients-icons{
     fill: var(--accent-color);
-}
-
-.clients-icons {
-    fill: var(--inactive-icon);
 }
 
 /* Filter */
@@ -454,7 +458,8 @@ button {
     margin-top: var(--works-item-gap);
 }
 
-.works .item:hover {
+.works .item:hover,
+.works .item:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -599,7 +604,8 @@ button {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
     background-color: var(--accent-color)
 }
 
